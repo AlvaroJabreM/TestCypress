@@ -6,7 +6,7 @@ jobs:
     # let's make sure our tests pass on Chrome browser
     name: E2E on Chrome
     steps:
-      - run: docker pull cypress-io/base
+      - run: docker pull cypress/base
       - uses: actions/checkout@v2
       - uses: cypress-io/github-action@v4
         with:
